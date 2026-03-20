@@ -9,6 +9,7 @@ interface Props {
 const { title, description = 'The Compositional Bestiary — Nicholas Daly\'s practice-based PhD research at the Universidad de Salamanca.', section = 'home', ogImage } = Astro.props;
 const siteTitle = title === 'Home' ? 'The Compositional Bestiary' : `${title} | The Compositional Bestiary`;
 const base = import.meta.env.BASE_URL;
+import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
@@ -78,8 +79,5 @@ const base = import.meta.env.BASE_URL;
     }
   </script>
 
-  <style>
-    @import '../styles/global.css';
-  </style>
 </body>
 </html>
