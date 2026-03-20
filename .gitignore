@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node (if you add build tools later)
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Large media (track with Git LFS if needed)
+# *.wav
+# *.mp3
+
+# Draft/private files you don't want public
+drafts/private/
+*.private.*
