@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="About"
+  description="About Nicholas Daly â€” composer, researcher, and nonprofit strategist. Education, affiliations, and musical biography."
+  section="about"
+>
+  <section class="page-hero">
+    <h1>About</h1>
+    <p class="page-hero-sub">Nicholas Daly â€” Composer, Researcher, Nonprofit Strategist</p>
+  </section>
+
+  <section class="section">
+    <div class="sidebar-layout container">
+      <article class="prose">
+        <h2 style="margin-top: 0;">Biography</h2>
+        <p>Nicholas Daly is a composer, researcher, and nonprofit strategist based in East Stroudsburg, Pennsylvania. His work explores the intersection of music, imagination, technology, and contemplative practiceâ€”asking how compositional methods can cultivate inner listening and how tools might serve rather than diminish human creativity.</p>
+
+        <p>Nicholas has spent thirty-five years across multiple musical traditions: classical composition, guitar performance, sacred music, and world music traditions ranging from Indian classical music to African percussion. This multivalent musical life has shaped a compositional voice oriented toward exploring what he calls "the imaginal cartography of inspirationâ€”the hidden landscapes from which music emerges.</p>
+
+        <p>As a researcher, he is completing a practice-based PhD at the Universidad de Salamanca, where he is developing The Compositional Bestiary: an interactive multimedia book that pairs historical study, philosophical inquiry, and creative practice. His theoretical framework draws on Henry Corbin's philosophy of the imaginal world, Bernard Stiegler's theory of technology, Ivan Illicj's concept of convivial tools, and contemporary work in ecophenomenology and practice-based artistic research.</p>
+
+        <p>As a strategist, Nedw‚¬Ô:W has founded and directed nonprofit organizations focused on cultural transmission, sacred music, and music education. He believes that artistic practice and institutional leadership are not separate domains, but expressions of a single commitment to human flourishing and cultural renewal.</p>
+  
+  
+   5Ùection class="sidebar">
+          <dl>
+            <dt>Education</dt>
+            <dd>MLitt, Erasmus Mundus Joint Masters (University of St Andrews, University of Santiago de Compostela, Universidade Nova de Lisboa)</dd>
+            <dd style="margin-top: 0.5rem;">BA, Temple University</dd>
+
+            <dt>Languages</dt>
+            <dd>English (native)</dd>
+            <dd>Spanish (fluent)</dd>
+            <dd>Portuguese (fluent)</dd>
+            <dd>French (intermediate)</dd>
+            <dd>Galician (intermediate)</dd>
+
+            <dt>Fellowships & Grants</dt>
+            <dd>Fulbright ETA Spain (2018â€“2019)</dd>
+            <dd>Erasmus Mundus Scholarship</dd>
+
+            <dt>Composition Study</dt>
+            <dd>Private study with <a href="#bohdan">Bohdan Syroyid Syroyid</a></dd>
+
+            <dt>Musical Life</dt>
+            <dd>35 years of practice across classical, sacred, folk, and world music traditions. Primary instruments: guitar, voice. Deep study of Indian classical raga and rhythm.</dd>
+
+            <dt>Based</dt>
+            <dd>East Stroudsburg, Pennsylvania, USA</dd>
+
+            <dt>Contact</dt>
+            <dd><a href="mailto:nick@nickdalycreative.com">nick@nickdalycreative.com</a></dd>
+            <dd><a href="https://github.com/nickjoedaly" target="_blank" rel="noopener">GitHub</a></dd>
+            <dd><a href="https://soundcloud.com/nickdalycomposer" target="_blank" rel="noopener">SoundCloud</a></dd>
+        </dl>
+      </aside>
+    </div>
+  
+   5Ùection class="section section-alt">
+    <div class="container">
+      <h2>Advisor & Context</h2>
+      <div class="card" id="bohdan">
+        <h4>Bohdan Syroyid Syroyid</h4>
+        <p>Doctoral supervisor and composition mentor. A pioneering figure in contemporary classical music, with deep expertise in both Western modernism and Eastern European musical traditions. His guidance has been essential in developing both the creative and conceptual dimensions of this research.</p>
+      </div>
+    </div>  
+  
+   5Ùection class="section container prose">
+    <h2>Institutional Context</h2>
+    <p>This research is conducted as a practice-based artistic PhD at the <strong>Universidad de Salamanca</strong>, one of Spain's oldest and most prestigious universities (founded 1218). The program privileges creative work as a primary mode of scholarly inquiry, alongside traditional written thesis work. The institutional support, interdisciplinary environment, and access to Europe's diverse musical and intellectual traditions have been invaluable to this project.</p>
+
+    <p>The research builds on prior graduate study in the Erasmus Mundus program, which provided immersive engagement with European intellectual and artistic contexts across the UK, Spain, and Portugalâ€”an experience that fundamentally shaped both the conceptual framework and the geographical orientation of the work.</p>
+  
+  
+   5Ùection class="section section-alt">
+    <div class="container">
+      <h2>On This Site</h2>
+      <p>Explore <a href={`${base}project/`}>The Project</a> for an overview of research vision and roadmap. <a href={`${base}research/`}>Research</a> provides scholarly documentation. <a href={`${base}works/`}>Works</a> showcases compositional output. <a href={`${base}tools/`}>Tools</a> documents the MuseScore plugins. <a href={`${base}book/`}>The Book</a> presents the bestiary creatures. <a href={`${base}`}>Home</a> offers a portal to all sections.</p>
+    </div>  
+  
+   5Ùection></BaseLayout>

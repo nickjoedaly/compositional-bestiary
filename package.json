@@ -1,0 +1,17 @@
+{
+  "name": "compositional-bestiary",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The Compositional Bestiary — Nicholas Daly's PhD research site",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.2",
+    "@astrojs/sitemap": "^3.7.1",
+    "astro": "^6.0.7"
+  }
+}

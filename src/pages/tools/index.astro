@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Tools"
+  description="MuseScore plugins and technical instruments for The Compositional Bestiary. Interactive tools turning creatures into compositional resources."
+  section="tools"
+>
+  
+   5Ùection class="page-hero">
+    <h1>Tools</h1>
+    <p class="page-hero-sub">MuseScore 4:)plugins and technical experiments. Each bestiary creature becomes an interactive compositional instrument.</p>
+  
+   5Ùection class="section container prose">
+    <h2>Plugin Architecture</h2>
+    <p>The Compositional Bestiary includes a suite of MuseScore 4 plugins, each representing one of the imaginal creatures. Rather than passive libraries, these are <em>companions in creation</em>â€”tools that suggest, constrain, explore, and expand what composers might imagine.</p>
+    <p>Each plugin implements a particular compositional strategy (harmonic transformation, rhythmic variation, melodic generation, etc.) drawn from the theoretical framework and historical lineage of the research.</p>
+  
+   5Ùection class="section section-alt">
+    <div class="container">
+      <h2>Development Roadmap</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Phase 1</div>
+          <div class="timeline-content">
+            <h3>Foundation & Infrastructure</h3>
+            <p>Core plugin skeleton, MuseScore 4 API integration, UI framework, and testing infrastructure established. Foundation for all creature plugins.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Phase 2</div>
+          <div class="timeline-content">
+            <h3>Core Creatures</h3>
+            <p>Implementation of the first four creatures: Harmonic Alchemist, Rhythmic Shapeshifter, Melodic Oracle, Harmonic Resonator. Beta testing and refinement.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Phase 3</div>
+          <div class="timeline-content">
+            <h3>Advanced Features</h3>
+            <p>Complex creature interactions, polyrhythmic support, cross-domain transformations, historical and cosmological mode systems. Performance optimization.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Phase 4</div>
+          <div class="timeline-content">
+            <h3>Community & Documentation</h3>
+            <p>Full documentation, video tutorials, community repository, and user feedback integration. Open-source release.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   5Ùection class="section container prose">
+    <h2>Sample Plugin Skeleton</h2>
+    <p>Below is a minimal QML structure for a Bestiary creature plugin in MuseScore 4:</p>
+
+    <div class="code-window">
+      <div class="code-header">
+        <span class="code-dot dot-red"></span>
+        <span class="code-dot dot-yellow"></span>
+        <span class="code-dot dot-green"></span>
+        <span class="code-filename">HarmonicAlchemist.qml</span>
+      </div>
+      <pre class="code-body"><Fragment set:html={`import MuseScore 3.0
+import QtQuick 2.15
+
+MuseScore &#123;
+  menuPath: "Plugins.Bestiary.Harmonic Alchemist"
+  description: "Transform intervals"
+  version: "0.1"
+
+  onRun: #"123;
+    var cursor = curScore.newCursor()
+    cursor.rewind(Cursor.SCORE_START)
+    while (cursor.segment) ##123;
+      if (cursor.element) ##123;
+        transformInterval(cursor.element)
+      &#125;
+      cursor.next()
+     * #125;
+    Qt.quit()
+  &#125;
+&#125;`} /></pre>
+    </div>
+
+    <p>Each creature plugin extends this pattern with its own transformation logic, UI controls, and parameter space. The full plugin API documentation and source code will be available on <a href="https://github.com/nickjoedaly" target="_blank" rel="noopener">GitHub</a>.</p>
+  
+   5Ùection class="section container prose">
+    <h2>Continsued.</h2>
+  </section>
+</BaseLayout>

@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Home"
+  description="The Compositional Bestiary — Nicholas Daly's doctoral research exploring the re-enchantment of algorithmic composition through historical and imaginal frameworks."
+  section="home"
+>
+  <section class="page-hero">
+    <p class="page-hero-overline">Nicholas Daly · Doctoral Research · Universidad de Salamanca</p>
+    <h1>The Compositional Bestiary</h1>
+    <p class="page-hero-sub">Re-enchanting algorithmic composition: from Kircher's wooden ark to AI-assisted inner listening.</p>
+  </section>
+
+  <section class="section container prose">
+    <div class="ornament-box">
+      <p><strong>Thesis.</strong> A gorgeous multimedia book exploring the imaginal cartography of inspiration and cultural transmission of a fantastical world that proves the academic argument for an autodidacticism based on a technics of inner revelation.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container-wide">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Explore the Research</h2>
+      <div class="card-grid">
+        <a href={`${base}project/`} class="card" style="text-decoration: none;">
+          <h4>The Project</h4>
+          <p>Conceptual overview, six-hundred-year lineage, core commitments, and research roadmap.</p>
+        </a>
+        <a href={`${base}research/`} class="card" style="text-decoration: none;">
+          <h4>Research</h4>
+          <p>Five-chapter thesis structure, theoretical framework, and practice-based methodology.</p>
+        </a>
+        <a href={`${base}works/`} class="card" style="text-decoration: none;">
+          <h4>Works</h4>
+          <p>Compositional portfolio: large ensemble works, chamber music, and audio-visual projects.</p>
+        </a>
+        <a href={`${base}tools/`} class="card" style="text-decoration: none;">
+          <h4>Tools</h4>
+          <p>MuseScore plugins that turn each creature into an interactive compositional instrument.</p>
+        </a>
+        <a href={`${base}book/`} class="card" style="text-decoration: none;">
+          <h4>The Book</h4>
+          <p>Interactive treasury with hand-drawn illustrations and real musical examples.</p>
+        </a>
+        <a href={`${base}about/`} class="card" style="text-decoration: none;">
+          <h4>About</h4>
+          <p>Nicholas Daly — composer, researcher, nonprofit strategist. Education, languages, and context.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .card {
+    color: inherit;
+    transition: all 0.25s ease;
+  }
+  .card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  }
+  .card:hover h4 {
+    color: var(--gold);
+  }
+</style>

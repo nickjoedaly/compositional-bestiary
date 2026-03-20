@@ -1,0 +1,85 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  section?: 'home' | 'project' | 'research' | 'works' | 'tools' | 'book' | 'about';
+  ogImage?: string;
+}
+
+const { title, description = 'The Compositional Bestiary — Nicholas Daly\'s practice-based PhD research at the Universidad de Salamanca.', section = 'home', ogImage } = Astro.props;
+const siteTitle = title === 'Home' ? 'The Compositional Bestiary' : `${title} | The Compositional Bestiary`;
+const base = import.meta.env.BASE_URL;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-section={section}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{siteTitle}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={siteTitle}>
+  <meta property="og:description" content={description}>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={Astro.url}>
+  {ogImage && <meta property="og:image" content={ogImage}>}
+  <meta name="twitter:card" content="summary">
+  <link rel="sitemap" href={`${base}sitemap-index.xml`}>
+  <link rel="canonical" href={Astro.url}>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐉</text></svg>">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href={`${base}`} class="nav-brand">The Compositional Bestiary</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="navigation">
+        <li><a href={`${base}`} class:list={[{ active: section === 'home' }]}>Home</a></li>
+        <li><a href={`${base}project/`} class:list={[{ active: section === 'project' }]}>Project</a></li>
+        <li><a href={`${base}research/`} class:list={[{ active: section === 'research' }]}>Research</a></li>
+        <li><a href={`${base}works/`} class:list={[{ active: section === 'works' }]}>Works</a></li>
+        <li><a href={`${base}tools/`} class:list={[{ active: section === 'tools' }]}>Tools</a></li>
+        <li><a href={`${base}book/`} class:list={[{ active: section === 'book' }]}>Book</a></li>
+        <li><a href={`${base}about/`} class:list={[{ active: section === 'about' }]}>About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <p>The Compositional Bestiary &copy; {new Date().getFullYear()} <a href={`${base}about/`}>Nicholas Daly</a></p>
+    <p style="margin-top: 0.35rem;">
+      <a href="mailto:nick@nickdalycreative.com">nick@nickdalycreative.com</a> &middot;
+      <a href="https://github.com/nickjoedaly" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        toggle.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+      navLinks.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-expanded', 'false');
+        })
+      );
+    }
+  </script>
+
+  <style>
+    @import '../styles/global.css';
+  </style>
+</body>
+</html>

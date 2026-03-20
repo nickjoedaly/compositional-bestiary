@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="The Project"
+  description="Overview of The Compositional Bestiary project: six-hundred-year lineage, core commitments, and research roadmap."
+  section="project"
+>
+  <section class="page-hero">
+    <h1>The Project</h1>
+    <p class="page-hero-sub">Conceptual overview, lineage, and commitments guiding the research.</p>
+  </section>
+
+  <section class="section container prose">
+    <h2>Six-Hundred-Year Lineage</h2>
+    <p>The Compositional Bestiary traces an invisible thread through the history of composition pedagogy and imaginal technologyâ€”from Guido d'Arezzo's invention of musical notation in the 11th century, through Athanasius Kircher's <em>Musurgia Universalis</em> and his legendary <em>Arca Musarithmica</em> (a mechanical system for composition by moving wooden rods), to contemporary AI-assisted composition tools.</p>
+    <p>Each of these moments represents a different answer to the same fundamental question: <strong>How can we cultivate the inner capacities that enable beautiful music to emerge?</strong> How can techjique become a servant to inspiration rather than its obstacle?</p>
+    <p>This project argues that algorithmic composition, properly understood through historical, imaginative, and spiritual frameworks, is not the death of musical creativity but its renewalâ€”a return to older technologies of inner listening.</p>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Three Core Commitments</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Learning as Adventure</h4>
+          <p>We approach composition not as a system to master, but as a landscape to explore. Each creature in the bestiary is an invitation to discover new compositional territories, to play, to fail, to imagine.</p>
+        </div>
+        <div class="card">
+          <h4>Personhood as Sacred</h4>
+          <p>The composer's subjective experienceâ€”their unique voice, embodied practice, inner listeningâ€”is not something to transcend but to honor. Technology serves the person, never replaces them.</p>
+        </div>
+        <div class="card">
+          <h4>Technology as Companion</h4>
+          <p>Tools are allies in creativity, not obstacles. From Kircher's ark to modern plugins, techž‚ílogy can expand what we're capable of imagining, if designed with wisdom and care.</p>
+        </div>
+      </div>
+    </div>
+  
+   5Ùection class="section container prose">
+    <h2>Research Roadmap</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2022â€“2023</div>
+        <div class="timeline-content">
+          <h3>Pre-inscription</h3>
+          <p>Conceptual development, literature review, and initial bestiary sketches. Establishing the theoretical framework and historical foundations.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023â€“2024</div>
+        <div class="timeline-content">
+          <h3>Coursework & Fieldwork</h3>
+          <p>Intensive doctoral seminars, theoretical deepening, and compositional practice. First major works completed (SEAWATER I & II). Initial plugin prototypes developed.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024 â€“2025</div>
+        <div class="timeline-content">
+          <h3>Writing & Implementation</h3>
+          <p>Thesis chapters drafted, creature library expanded, full plugin suite developed. Integration of all multimedia elements.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2025â€“2026</div>
+        <div class="timeline-content">
+          <h3>Defense & Publication</h3>
+          <p>Thesis revision and defense. Publication of multimedia artifact. Presentation and dissemination of research outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+   5Ùection class="section section-alt">
+    <div class="container">
+      <h2>Navigation</h2>
+      <p>For deeper scholarly detail, visit <a href={`${base}research/`}>Research</a>. For compositional output, see <a href={`${base}works/`}>Works</a>. For interactive tools, explore <a href={`${base}tools/`}>Tools</a>. For the completed artifact, see <a href={`${base}book/`}>The Book</a>.</p>
+    </div>
+  </section>
+</BaseLayout>
