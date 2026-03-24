@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="The Compositional Bestiary"
+  description="AI-enhanced creatures as compositional philosophies and pedagogical guides"
+  section="portfolio"
+>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-overline">Core Artifact</div>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--ink); margin-bottom: 0.8rem;">
+        The Compositional <em style="color: var(--red); font-style: italic;">Bestiary</em>
+      </h1>
+      <div class="page-hero-sub">
+        Ten fantastical creatures embodying pedagogical philosophies and algorithmic approaches to composition.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT -->
+  <section class="section">
+    <div class="container">
+      <div class="ornament-box" style="border: 1px solid var(--border); padding: 2rem 2.5rem; margin: 2rem 0; position: relative; text-align: center; font-style: italic; color: var(--ink-light); line-height: 1.72;">
+        <p style="margin: 0;">The Bestiary is an imaginal atlas—a map of territory that students cannot yet see. Each creature represents a distinct way of listening and composing. By apprenticing themselves to these creatures, students learn not through abstract rules but through mythic engagement with compositional personalities.</p>
+      </div>
+
+      <div class="prose" style="max-width: var(--max-width); margin: 2rem auto;">
+        <p class="drop-cap">
+          Medieval bestiaries catalogued animals both real and fantastical, often attaching moral and spiritual lessons to each creature. The Compositional Bestiary takes this form and repurposes it for contemporary pedagogy. Each creature embodies a compositional philosophy integrated with an algorithmic process.
+        </p>
+
+        <p>
+          Rather than presenting algorithms as neutral tools, the Bestiary personifies them, giving them personality, agency, and intention. This transforms the student's relationship to technology from passive consumption to active dialogue. Instead of asking "What does this algorithm do?" the student asks "What would the Harmonic Alchemist do with this gesture? How would the Melodic Oracle respond?"
+        </p>
+
+        <p>
+          The creatures are neither wholly human nor wholly machine, but liminal beings—hybrids that invite students to think beyond the binary of "natural" versus "artificial" creativity. They model the kind of collaboration that is central to the thesis: technology as companion, not oracle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATURES -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">The Ten Creatures</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0;">
+        <!-- The Harmonic Alchemist -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Harmonic Alchemist</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--gold-glow); color: var(--gold); padding: 0.18rem 0.55rem; border-radius: 2px;">constraint-based</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature that transforms constraint into abundance. The Alchemist works with pitch sets, harmonic fields, and restricted tonal palettes, demonstrating that limitation can generate creative freedom. This creature embodies spectral harmony and extended just intonation, teaching that consonance and dissonance exist on a continuum.
+          </p>
+        </div>
+
+        <!-- The Melodic Oracle -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Melodic Oracle</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag-red" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(139,26,26,0.08); color: var(--red); padding: 0.18rem 0.55rem; border-radius: 2px;">generative</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of prophecy and emergence. The Oracle generates unexpected melodic lines based on statistical analysis of musical corpora, yet retains an uncanny sense of "rightness." It teaches generative composition and the productive tension between human intention and algorithmic surprise.
+          </p>
+        </div>
+
+        <!-- The Rhythmic Shapeshifter -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Rhythmic Shapeshifter</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag-blue" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(42,74,107,0.08); color: var(--blue); padding: 0.18rem 0.55rem; border-radius: 2px;">transformative</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of metamorphosis and flow. The Shapeshifter takes rhythmic patterns and progressively transforms them—stretching, fragmenting, recontextualizing. It teaches compositional growth through transformation and the relationship between rhythm and time perception.
+          </p>
+        </div>
+
+        <!-- The Textural Weaver -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Textural Weaver</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--gold-glow); color: var(--gold); padding: 0.18rem 0.55rem; border-radius: 2px;">spectralism</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of layering and simultaneity. The Weaver orchestrates multiple independent voices into luminous totalities, exploring how individual lines can interlock to create shimmering textures. It teaches orchestration as texture-making rather than voice-leading.
+          </p>
+        </div>
+
+        <!-- The Formal Architect -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Formal Architect</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag-green" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(61,90,58,0.08); color: var(--green); padding: 0.18rem 0.55rem; border-radius: 2px;">structural</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of systems and scaffolding. The Architect designs formal structures that guide but do not constrain, creating coherence through recursive principles and fractal patterning. It demonstrates how form can emerge organically rather than being imposed.
+          </p>
+        </div>
+
+        <!-- The Dialogic Interlocutor -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Dialogic Interlocutor</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag-red" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(139,26,26,0.08); color: var(--red); padding: 0.18rem 0.55rem; border-radius: 2px;">relational</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of conversation and call-and-response. The Interlocutor models dialogue across genres and traditions, drawing on principles from flamenco, West African music, and jazz. It teaches composition as conversation rather than monologue.
+          </p>
+        </div>
+
+        <!-- The Ecological Listener -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Ecological Listener</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--gold-glow); color: var(--gold); padding: 0.18rem 0.55rem; border-radius: 2px;">ecocritical</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature that hears the more-than-human world. The Listener integrates field recordings, natural sound patterns, and non-human voices into compositions. It teaches that humans are not the only subjects of music, but participants in a larger sonic ecology.
+          </p>
+        </div>
+
+        <!-- The Constraint Liberator -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Constraint Liberator</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag-blue" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(42,74,107,0.08); color: var(--blue); padding: 0.18rem 0.55rem; border-radius: 2px;">oulipian</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of paradox: constraint as liberation. Following Oulipo principles, the Liberator demonstrates how artificial restrictions (working within a 7-note scale, using only palindromic rhythms, etc.) actually maximize creative freedom through focused exploration.
+          </p>
+        </div>
+
+        <!-- The Imaginal Navigator -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Imaginal Navigator</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag-green" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(61,90,58,0.08); color: var(--green); padding: 0.18rem 0.55rem; border-radius: 2px;">visionary</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of Corbin's mundus imaginalis. The Navigator guides students through inner worlds of meaning and symbol, teaching composition as a spiritual practice. It honors the imagination as a legitimate faculty of knowledge, not mere fantasy.
+          </p>
+        </div>
+
+        <!-- The Convivial Companion -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">The Convivial Companion</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="tag" style="display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--gold-glow); color: var(--gold); padding: 0.18rem 0.55rem; border-radius: 2px;">collaborative</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0; line-height: 1.6;">
+            A creature of partnership and dialogue with technology. The Companion embodies Illich's ideal of tools that enhance rather than diminish human agency. It teaches that the best algorithmic tool is one that invites conversation and respects human intentionality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- BESTIARY AS ATLAS -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">The Bestiary as Atlas</h2>
+
+      <div class="prose" style="max-width: var(--max-width);">
+        <p class="drop-cap">
+          An atlas is not merely a representation of territory; it is an invitation to navigation. The Compositional Bestiary functions as an imaginal atlas—a map of the territory between human creativity and algorithmic possibility. Each creature marks a landmark, a way of thinking, a doorway into compositional practice.
+        </p>
+
+        <p>
+          Students working with the Bestiary are not merely learning techniques; they are learning to apprentice themselves to distinct compositional voices. Over time, they develop a dialogue with multiple creatures, recognizing when the Harmonic Alchemist's constraint-based thinking is appropriate and when the Dialogic Interlocutor's relational sensibility is needed.
+        </p>
+
+        <p>
+          The Bestiary is ultimately about awakening agency. Rather than presenting composition as a set of rules to follow, or algorithms as oracles to obey, the Bestiary invites students to recognize themselves as composers—creators with their own vision, who can converse with tradition, technology, and other voices while maintaining their unique perspective.
+        </p>
+
+        <p>
+          This is the pedagogy of the imaginal cartography: to map not external territory, but the student's own creative potential, helping them discover that the mysterious realm of composition is not distant or foreign, but intimate and accessible.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -5,92 +5,149 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Tools"
-  description="MuseScore plugins and technical instruments for The Compositional Bestiary. Interactive tools turning creatures into compositional resources."
-  section="tools"
+  title="MuseScore Plugins"
+  description="Technical tools for algorithmic composition and musical exploration"
+  section="portfolio"
 >
-  
-   5�ection class="page-hero">
-    <h1>Tools</h1>
-    <p class="page-hero-sub">MuseScore 4:)plugins and technical experiments. Each bestiary creature becomes an interactive compositional instrument.</p>
-  
-   5�ection class="section container prose">
-    <h2>Plugin Architecture</h2>
-    <p>The Compositional Bestiary includes a suite of MuseScore 4 plugins, each representing one of the imaginal creatures. Rather than passive libraries, these are <em>companions in creation</em>—tools that suggest, constrain, explore, and expand what composers might imagine.</p>
-    <p>Each plugin implements a particular compositional strategy (harmonic transformation, rhythmic variation, melodic generation, etc.) drawn from the theoretical framework and historical lineage of the research.</p>
-  
-   5�ection class="section section-alt">
+  <!-- HERO -->
+  <section class="page-hero">
     <div class="container">
-      <h2>Development Roadmap</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">Phase 1</div>
-          <div class="timeline-content">
-            <h3>Foundation & Infrastructure</h3>
-            <p>Core plugin skeleton, MuseScore 4 API integration, UI framework, and testing infrastructure established. Foundation for all creature plugins.</p>
-          </div>
+      <div class="page-hero-overline">Technical Tools</div>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--ink); margin-bottom: 0.8rem;">
+        MuseScore <em style="color: var(--red); font-style: italic;">Plugins</em>
+      </h1>
+      <div class="page-hero-sub">
+        Custom tools that extend MuseScore's capabilities for algorithmic composition, constraint-based exploration, and generative techniques.
+      </div>
+    </div>
+  </section>
+
+  <!-- CODE EXAMPLE -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">A Sample Plugin</h2>
+
+      <p style="color: var(--ink-light); margin-bottom: 1.5rem;">
+        MuseScore plugins are written in QML (Qt Meta Language), a declarative language for UI and application logic. Here's a simplified example of how a constraint-based composition plugin might work:
+      </p>
+
+      <div class="code-window">
+        <div class="code-header">
+          <div class="code-dot dot-red"></div>
+          <div class="code-dot dot-yellow"></div>
+          <div class="code-dot dot-green"></div>
+          <div class="code-filename">HarmonicAlchemist.qml</div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Phase 2</div>
-          <div class="timeline-content">
-            <h3>Core Creatures</h3>
-            <p>Implementation of the first four creatures: Harmonic Alchemist, Rhythmic Shapeshifter, Melodic Oracle, Harmonic Resonator. Beta testing and refinement.</p>
-          </div>
+        <div class="code-body">
+          <div><span class="cm">// Harmonic Alchemist: constraint-based pitch generation</span></div>
+          <div style="margin-top: 0.5rem;"><span class="kw">import</span> <span class="st">"MuseScore 3.0"</span></div>
+          <div><span class="kw">import</span> <span class="st">"QtQuick 2.0"</span></div>
+          <div style="margin-top: 0.5rem;"><span class="kw">MuseScore</span> &#123;</div>
+          <div style="margin-left: 1.5rem;">  <span class="fn">onRun:</span> &#123;</div>
+          <div style="margin-left: 3rem;"><span class="kw">var</span> <span class="tp">pitchSet</span> = [0, 2, 4, 7, 9]; <span class="cm">// pentatonic</span></div>
+          <div style="margin-left: 3rem;"><span class="kw">var</span> <span class="tp">notes</span> = curScore.selection.elements;</div>
+          <div style="margin-left: 3rem;"><span class="kw">for</span> (<span class="kw">var</span> <span class="tp">i</span> = 0; <span class="tp">i</span> &lt; notes.length; <span class="tp">i</span>++) &#123;</div>
+          <div style="margin-left: 4.5rem;"><span class="kw">var</span> <span class="tp">pitch</span> = pitchSet[i % pitchSet.length];</div>
+          <div style="margin-left: 4.5rem;">notes[i].pitch = pitch;</div>
+          <div style="margin-left: 3rem;">&#125;</div>
+          <div style="margin-left: 1.5rem;">  &#125;</div>
+          <div>&#125;</div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Phase 3</div>
-          <div class="timeline-content">
-            <h3>Advanced Features</h3>
-            <p>Complex creature interactions, polyrhythmic support, cross-domain transformations, historical and cosmological mode systems. Performance optimization.</p>
+      </div>
+
+      <p style="color: var(--ink-light); margin-top: 1.5rem;">
+        This simplified example shows how a plugin can define a pitch set and apply it to selected notes. Real plugins are much more sophisticated, handling voice leading, harmonic transitions, and interactive parameter adjustment.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- PLUGIN CARDS -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">Available Plugins</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0;">
+        <!-- Harmonic Alchemist Plugin -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">Harmonic Alchemist</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="status status-complete" style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; font-weight: 500; background: rgba(42,74,107,0.1); color: var(--blue);">Complete</span>
           </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.8rem; line-height: 1.6;">
+            Applies constraint-based harmonic transformation to selected passages. Define a pitch set, and the Alchemist will reharmonize melodies using only those pitches, exploring the creative potential of constraint. Includes options for voice leading and harmonic density.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--ink-faded); margin: 0;">
+            <strong>Features:</strong> Custom pitch set definition, voice-leading preservation, harmonic analysis
+          </p>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Phase 4</div>
-          <div class="timeline-content">
-            <h3>Community & Documentation</h3>
-            <p>Full documentation, video tutorials, community repository, and user feedback integration. Open-source release.</p>
+
+        <!-- Melodic Oracle Plugin -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">Melodic Oracle</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="status status-active" style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; font-weight: 500; background: rgba(61,90,58,0.12); color: var(--green);">In Development</span>
           </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.8rem; line-height: 1.6;">
+            Generates melodic variations based on Markov chain analysis of input material. Analyzes the statistical patterns in a theme and generates new melodic lines that maintain the character while introducing surprise and novelty. A generative approach to variation technique.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--ink-faded); margin: 0;">
+            <strong>Features:</strong> Markov analysis, statistical variation, novelty parameters
+          </p>
+        </div>
+
+        <!-- Rhythmic Shapeshifter Plugin -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">Rhythmic Shapeshifter</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="status status-active" style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; font-weight: 500; background: rgba(61,90,58,0.12); color: var(--green);">In Development</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.8rem; line-height: 1.6;">
+            Applies progressive transformation to rhythmic patterns—stretching durations, adding or removing notes, recontextualizing attacks. Useful for developing rhythmic ideas through metamorphosis and exploring how rhythm can shift in perception and feeling.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--ink-faded); margin: 0;">
+            <strong>Features:</strong> Duration morphing, fragmentation, recontextualization
+          </p>
+        </div>
+
+        <!-- Ecological Listener Plugin -->
+        <div style="border: 1px solid var(--border); padding: 1.8rem; transition: all var(--transition); position: relative;" class="card">
+          <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">Ecological Listener</h4>
+          <div style="margin-bottom: 0.8rem;">
+            <span class="status status-planned" style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; font-weight: 500; background: var(--gold-glow); color: var(--gold);">Planned</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.8rem; line-height: 1.6;">
+            Analyzes environmental recordings (rainfall, cricket chirps, wind patterns) and maps their acoustic characteristics onto musical notation. Brings the voice of the more-than-human world into compositional practice, honoring the ecological interconnection of all sound.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--ink-faded); margin: 0;">
+            <strong>Features:</strong> Spectral analysis of environmental sound, pitch mapping, frequency-to-notation conversion
+          </p>
         </div>
       </div>
     </div>
   </section>
-  
-   5�ection class="section container prose">
-    <h2>Sample Plugin Skeleton</h2>
-    <p>Below is a minimal QML structure for a Bestiary creature plugin in MuseScore 4:</p>
 
-    <div class="code-window">
-      <div class="code-header">
-        <span class="code-dot dot-red"></span>
-        <span class="code-dot dot-yellow"></span>
-        <span class="code-dot dot-green"></span>
-        <span class="code-filename">HarmonicAlchemist.qml</span>
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- WHY MUSESCORE -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">Why MuseScore?</h2>
+
+      <div class="prose" style="max-width: var(--max-width);">
+        <p class="drop-cap">
+          MuseScore is free, open-source notation software widely used by students and composers worldwide. By developing plugins for MuseScore rather than proprietary or expensive tools, I am committed to making these algorithmic tools genuinely accessible—convivial in Illich's sense.
+        </p>
+
+        <p>
+          MuseScore's QML plugin system allows for sophisticated music-theoretical transformations while remaining relatively simple to learn. This makes the plugins themselves pedagogical—students can examine the code, understand how the algorithms work, and modify them for their own purposes. The tool invites appropriation and dialogue rather than demanding passive consumption.
+        </p>
+
+        <p>
+          Furthermore, MuseScore's integration with MuseScore.com (a platform for sharing and discovering sheet music) means that compositions created with these tools can easily be shared, remixed, and built upon. The plugins thus model the kind of open-source, collaborative creativity that I advocate pedagogically.
+        </p>
       </div>
-      <pre class="code-body"><Fragment set:html={`import MuseScore 3.0
-import QtQuick 2.15
-
-MuseScore &#123;
-  menuPath: "Plugins.Bestiary.Harmonic Alchemist"
-  description: "Transform intervals"
-  version: "0.1"
-
-  onRun: #"123;
-    var cursor = curScore.newCursor()
-    cursor.rewind(Cursor.SCORE_START)
-    while (cursor.segment) ##123;
-      if (cursor.element) ##123;
-        transformInterval(cursor.element)
-      &#125;
-      cursor.next()
-     * #125;
-    Qt.quit()
-  &#125;
-&#125;`} /></pre>
     </div>
-
-    <p>Each creature plugin extends this pattern with its own transformation logic, UI controls, and parameter space. The full plugin API documentation and source code will be available on <a href="https://github.com/nickjoedaly" target="_blank" rel="noopener">GitHub</a>.</p>
-  
-   5�ection class="section container prose">
-    <h2>Continsued.</h2>
   </section>
 </BaseLayout>

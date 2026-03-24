@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Research Log"
+  description="Updates and milestones from Nicholas Daly's doctoral research and creative practice"
+  section="updates"
+>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--ink); margin-bottom: 0.8rem;">
+        Research <em style="color: var(--red); font-style: italic;">Log</em>
+      </h1>
+      <div class="page-hero-sub">
+        Updates, milestones, and reflections from ongoing doctoral research and creative practice.
+      </div>
+    </div>
+  </section>
+
+  <!-- UPDATES -->
+  <section class="section">
+    <div class="container">
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">23 March 2026</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Personal Website Launch</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Launched a complete redesign of my professional website with new documentation of research, portfolio, and the Compositional Bestiary. The site now serves as both portfolio and teaching tool, making my doctoral work accessible and engaging.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">19 March 2026</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Harmonic Alchemist Plugin Completed</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Finished first MuseScore plugin for the Harmonic Alchemist creature. The plugin allows composers to define custom pitch sets and apply them to score selections, demonstrating constraint-based composition in practice. Plugin is available open-source on GitHub.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">March 2026</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">USAL Pre-Inscription Window Open</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          The pre-inscription period for doctoral students at Universidad de Salamanca has opened. Beginning formal administrative process for PhD program, with official enrollment expected for Fall 2026. Supervisor Bohdan Syroyid has confirmed project scope and timeline.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">February 2026</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Funding Strategy Completed</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Completed comprehensive funding strategy for nonprofit consulting work. Identified major foundation prospects, developed pipeline of grant opportunities, and secured commitments from three major institutional partners for 2026 funding initiatives.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">January 2026</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Chapter II Draft Complete</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Finished first complete draft of Chapter II (Historical and Cosmological Didactics). This chapter maps pedagogical models across global music traditions, including flamenco, West African drumming, Celtic music, and gamelan. Submitted to supervisor for feedback.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">November 2025</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">"Seawater, Yearning" Premiered</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Large ensemble work premiered at Universidad de Salamanca concert series. Performance featured mixed ensemble of strings, winds, and percussion exploring themes of desire and temporal flow. Work received positive response and will be recorded for digital archive.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">October 2025</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Thesis Framework Approved</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Presented comprehensive thesis framework to USAL doctoral committee. The "Compositional Bestiary" concept was enthusiastically received as an innovative approach to combining artistic practice with theoretical research. Formal doctoral registration approved to begin immediately.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: 1px solid var(--border-light); padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">September 2025</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Supervisor Meeting: Project Scope Established</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Met with primary supervisor Bohdan Syroyid to finalize thesis scope, timeline, and research methodologies. Established four-year timeline for completion of five chapters, creative practice, and multimedia bestiary documentation. Focus on practice-based research and artistic output alongside traditional academic work.
+        </p>
+      </div>
+
+      <div class="update-card" style="border-bottom: none; padding: 1.8rem 0;">
+        <div class="update-date" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.3rem;">August 2025</div>
+        <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--red); font-weight: 600;">Bestiary Creature Designs Underway</h3>
+        <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+          Began designing the ten creatures of the Compositional Bestiary: the Harmonic Alchemist, Melodic Oracle, Rhythmic Shapeshifter, and others. Each creature embodies a distinct pedagogical philosophy and algorithmic approach. Initial sketches and concept notes completed; development of plugin implementations to follow.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
