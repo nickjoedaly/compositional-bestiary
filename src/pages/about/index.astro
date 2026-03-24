@@ -6,81 +6,163 @@ const base = import.meta.env.BASE_URL;
 
 <BaseLayout
   title="About"
-  description="About Nicholas Daly — composer, researcher, and nonprofit strategist. Education, affiliations, and musical biography."
+  description="Who I am: scholar, composer, nonprofit strategist, and lifelong musician"
   section="about"
 >
+  <!-- HERO -->
   <section class="page-hero">
-    <h1>About</h1>
-    <p class="page-hero-sub">Nicholas Daly — Composer, Researcher, Nonprofit Strategist</p>
+    <div class="container">
+      <div class="page-hero-overline">Who I Am</div>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--ink); margin-bottom: 0.8rem;">
+        About <em style="color: var(--red); font-style: italic;">Me</em>
+      </h1>
+      <div class="page-hero-sub">
+        Composer, researcher, nonprofit strategist — fascinated by how we learn, create, and imagine together.
+      </div>
+    </div>
   </section>
 
+  <!-- MAIN CONTENT WITH SIDEBAR -->
   <section class="section">
-    <div class="sidebar-layout container">
-      <article class="prose">
-        <h2 style="margin-top: 0;">Biography</h2>
-        <p>Nicholas Daly is a composer, researcher, and nonprofit strategist based in East Stroudsburg, Pennsylvania. His work explores the intersection of music, imagination, technology, and contemplative practice—asking how compositional methods can cultivate inner listening and how tools might serve rather than diminish human creativity.</p>
+    <div class="container-wide" style="display: grid; grid-template-columns: 1fr 260px; gap: 3rem; align-items: start;">
+      <!-- MAIN BIO -->
+      <div>
+        <p class="drop-cap prose" style="max-width: var(--max-width); font-size: 1rem;">
+          I am a composer and scholar obsessed with a central question: How do we awaken human creativity? Not creativity as a rare gift bestowed on exceptional people, but creativity as a fundamental capacity—something dormant in all of us that needs cultivation, permission, and the right conditions to flourish.
+        </p>
 
-        <p>Nicholas has spent thirty-five years across multiple musical traditions: classical composition, guitar performance, sacred music, and world music traditions ranging from Indian classical music to African percussion. This multivalent musical life has shaped a compositional voice oriented toward exploring what he calls "the imaginal cartography of inspiration—the hidden landscapes from which music emerges.</p>
+        <p style="color: var(--ink-light); max-width: var(--max-width);">
+          This question animates three dimensions of my work. As a musician, I've spent 35 years apprenticing myself to multiple musical traditions—flamenco, fado, Celtic music, West African drumming, jazz—each with its own philosophy of how knowledge is transmitted, how beauty is created, how personhood emerges through practice. Each tradition has taught me something essential about learning.
+        </p>
 
-        <p>As�a researcher, he is completing a practice-based PhD at the Universidad de Salamanca, where he is developing The Compositional Bestiary: an interactive multimedia book that pairs historical study, philosophical inquiry, and creative practice. His theoretical framework draws on Henry Corbin's philosophy of the imaginal world, Bernard Stiegler's theory of technology, Ivan Illicj's concept of convivial tools, and contemporary work in ecophenomenology and practice-based artistic research.</p>
+        <p style="color: var(--ink-light); max-width: var(--max-width);">
+          As a scholar, I'm exploring how algorithmic composition can serve as a pedagogical tool without surrendering agency to the machine. The key insight from thinkers like Ivan Illich and Bernard Stiegler is that technology is never neutral—it shapes our consciousness. But there are "convivial" tools that enhance human intention rather than diminishing it. I'm interested in what it means to compose with algorithms as companions rather than oracles or slaves.
+        </p>
 
-        <p>As a strategist, Nedw���:W has founded and directed nonprofit organizations focused on cultural transmission, sacred music, and music education. He believes that artistic practice and institutional leadership are not separate domains, but expressions of a single commitment to human flourishing and cultural renewal.</p>
-  
-  
-   5�ection class="sidebar">
-          <dl>
-            <dt>Education</dt>
-            <dd>MLitt, Erasmus Mundus Joint Masters (University of St Andrews, University of Santiago de Compostela, Universidade Nova de Lisboa)</dd>
-            <dd style="margin-top: 0.5rem;">BA, Temple University</dd>
+        <p style="color: var(--ink-light); max-width: var(--max-width);">
+          As a nonprofit strategist, I've worked to secure $21 million in grant funding for organizations doing meaningful work in education, environmental conservation, and international development. This work taught me that impact requires both vision and financial sustainability. It's also taught me that the best strategies emerge from listening deeply to communities and honoring their expertise, not imposing external solutions.
+        </p>
 
-            <dt>Languages</dt>
-            <dd>English (native)</dd>
-            <dd>Spanish (fluent)</dd>
-            <dd>Portuguese (fluent)</dd>
-            <dd>French (intermediate)</dd>
-            <dd>Galician (intermediate)</dd>
+        <p style="color: var(--ink-light); max-width: var(--max-width);">
+          These three dimensions—artistic, theoretical, and practical—are not separate. They're all grappling with the same fundamental question: How do we create conditions where people can become more fully themselves?
+        </p>
 
-            <dt>Fellowships & Grants</dt>
-            <dd>Fulbright ETA Spain (2018–2019)</dd>
-            <dd>Erasmus Mundus Scholarship</dd>
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">The Doctoral Project</h3>
 
-            <dt>Composition Study</dt>
-            <dd>Private study with <a href="#bohdan">Bohdan Syroyid Syroyid</a></dd>
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            I am currently pursuing a PhD at Universidad de Salamanca under the supervision of Bohdan Syroyid. My doctoral research is titled "Algorithmic Composition as Pedagogy: Toward a Technics of Inner Revelation," and it culminates in the creation of "The Compositional Bestiary"—a multimedia work exploring ten fantastical creatures, each embodying a distinct compositional philosophy and algorithmic approach.
+          </p>
 
-            <dt>Musical Life</dt>
-            <dd>35 years of practice across classical, sacred, folk, and world music traditions. Primary instruments: guitar, voice. Deep study of Indian classical raga and rhythm.</dd>
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            The Bestiary works at the intersection of theory and practice. Rather than asking "What does this algorithm do?" students ask "What would the Harmonic Alchemist do with this gesture?" By personifying algorithmic processes, we restore agency and intentionality to the compositional act. Technology becomes a mirror in which students can see their own creative potential reflected back to them.
+          </p>
 
-            <dt>Based</dt>
-            <dd>East Stroudsburg, Pennsylvania, USA</dd>
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            The theoretical framework draws on Henry Corbin's concept of the mundus imaginalis (the imaginal world), Ivan Illich's vision of convivial tools, and pedagogical insights from studying music across multiple traditions. The artistic output includes new compositions, interactive MuseScore plugins, and a multimedia bestiary that can serve as both artwork and teaching tool.
+          </p>
+        </div>
 
-            <dt>Contact</dt>
-            <dd><a href="mailto:nick@nickdalycreative.com">nick@nickdalycreative.com</a></dd>
-            <dd><a href="https://github.com/nickjoedaly" target="_blank" rel="noopener">GitHub</a></dd>
-            <dd><a href="https://soundcloud.com/nickdalycomposer" target="_blank" rel="noopener">SoundCloud</a></dd>
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">Why Multiple Practices?</h3>
+
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            I've been asked why I don't focus on just one area—why be a scholar, a composer, and a strategist simultaneously? The honest answer is: I can't help it. Each practice illuminates the others. The musician learns discipline and patience; the scholar learns how to think systematically; the strategist learns how to translate vision into action.
+          </p>
+
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            More importantly, I believe that the most interesting work happens at the intersections. The insights I've gained from securing grants for nonprofits have shaped how I think about sustainable pedagogy. The rhythmic patterns I've learned from West African drumming inform my approach to algorithmic composition. The theoretical frameworks I study as a scholar give language to intuitions I've developed through years of musical practice.
+          </p>
+
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            I'm advocating for a kind of intellectual porousness—remaining open to multiple ways of knowing, multiple communities of practice, multiple ways of contributing to the world. The goal is not to be a dilettante, but to cultivate a perspective that is genuinely interdisciplinary rather than merely multidisciplinary.
+          </p>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">What Draws Me</h3>
+
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            I am drawn to work that sits at the intersection of imagination and rigor. I am drawn to teachers who model what they teach. I am drawn to traditions that have survived centuries because they continue to produce meaning and beauty and growth. I am drawn to people doing work they believe in, even (or especially) when the culture doesn't make it easy.
+          </p>
+
+          <p style="color: var(--ink-light); max-width: var(--max-width);">
+            I am drawn to the question of how we can use technology without being used by it. How we can remain sovereign over our own creativity while remaining open to surprise and novelty. How we can honor tradition without being imprisoned by it. How we can imagine different futures while remaining rooted in present relationships and communities.
+          </p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" style="border: 1px solid var(--border); padding: 1.5rem; font-size: 0.88rem; position: sticky; top: 72px;">
+        <dl style="margin: 0;">
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 0;">Education</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">PhD Candidate, Universidad de Salamanca<br>MLitt, Erasmus Mundus<br>BA, Temple University</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Languages</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">English, Spanish, Portuguese, French, Galician</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Fellowships</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">Erasmus Mundus Scholar, Fulbright ETA</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Composition Study</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">Bohdan Syroyid (USAL), Yann Robin (NOVA Lisboa), multiple mentors</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Musical Life</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">35+ years across flamenco, fado, Celtic, West African, bluegrass, jazz</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Based</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">Salamanca, Spain</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Contact</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">
+            <a href="mailto:nicholas@daly.bio" style="color: var(--gold); text-decoration: none;">nicholas@daly.bio</a>
+          </dd>
         </dl>
       </aside>
     </div>
-  
-   5�ection class="section section-alt">
-    <div class="container">
-      <h2>Advisor & Context</h2>
-      <div class="card" id="bohdan">
-        <h4>Bohdan Syroyid Syroyid</h4>
-        <p>Doctoral supervisor and composition mentor. A pioneering figure in contemporary classical music, with deep expertise in both Western modernism and Eastern European musical traditions. His guidance has been essential in developing both the creative and conceptual dimensions of this research.</p>
-      </div>
-    </div>  
-  
-   5�ection class="section container prose">
-    <h2>Institutional Context</h2>
-    <p>This research is conducted as a practice-based artistic PhD at the <strong>Universidad de Salamanca</strong>, one of Spain's oldest and most prestigious universities (founded 1218). The program privileges creative work as a primary mode of scholarly inquiry, alongside traditional written thesis work. The institutional support, interdisciplinary environment, and access to Europe's diverse musical and intellectual traditions have been invaluable to this project.</p>
+  </section>
 
-    <p>The research builds on prior graduate study in the Erasmus Mundus program, which provided immersive engagement with European intellectual and artistic contexts across the UK, Spain, and Portugal—an experience that fundamentally shaped both the conceptual framework and the geographical orientation of the work.</p>
-  
-  
-   5�ection class="section section-alt">
+  <div class="divider" style="text-align: center; padding: 2.5rem 0; color: var(--border); font-size: 1.2rem; letter-spacing: 0.5em;">✦ ✦ ✦</div>
+
+  <!-- SUPERVISOR SECTION -->
+  <section class="section section-alt">
     <div class="container">
-      <h2>On This Site</h2>
-      <p>Explore <a href={`${base}project/`}>The Project</a> for an overview of research vision and roadmap. <a href={`${base}research/`}>Research</a> provides scholarly documentation. <a href={`${base}works/`}>Works</a> showcases compositional output. <a href={`${base}tools/`}>Tools</a> documents the MuseScore plugins. <a href={`${base}book/`}>The Book</a> presents the bestiary creatures. <a href={`${base}`}>Home</a> offers a portal to all sections.</p>
-    </div>  
-  
-   5�ection></BaseLayout>
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">Doctoral Supervisor</h2>
+
+      <div style="border: 1px solid var(--border); padding: 1.8rem; position: relative; max-width: 600px;">
+        <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--red); margin-bottom: 0.6rem;">Bohdan Syroyid</h4>
+        <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0.8rem 0;">
+          Professor of Music Composition and founder of the Music Theory program at Universidad de Salamanca. Dr. Syroyid specializes in contemporary composition, algorithmic music, and innovative pedagogies. His research focuses on the intersection of technology and artistic practice, making him an ideal supervisor for work that bridges creative practice with theoretical research.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--ink-light); margin: 0;">
+          Under Dr. Syroyid's mentorship, the Compositional Bestiary project has evolved into a sophisticated exploration of how pedagogy, imagination, and technology can work together to awaken creative agency in students.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="text-align: center; padding: 2.5rem 0; color: var(--border); font-size: 1.2rem; letter-spacing: 0.5em;">✦ ✦ ✦</div>
+
+  <!-- INSTITUTIONAL CONTEXT -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">Institutional Context</h2>
+
+      <div style="max-width: var(--max-width);">
+        <h3 style="font-size: 1.35rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--ink-light);">Universidad de Salamanca</h3>
+
+        <p style="color: var(--ink-light); margin-bottom: 1rem;">
+          USAL is one of Europe's oldest universities, founded in 1218. It has a distinguished tradition of philosophical inquiry, scientific research, and humanistic scholarship. The university is particularly strong in music scholarship, with world-class faculty in composition, musicology, and ethnomusicology.
+        </p>
+
+        <p style="color: var(--ink-light); margin-bottom: 1rem;">
+          The doctoral program in which I'm enrolled emphasizes practice-based research and artistic output alongside traditional academic work. This framework perfectly accommodates a thesis that combines theoretical research with compositional practice. My work contributes to USAL's growing reputation for innovative approaches to musical research and pedagogy.
+        </p>
+
+        <p style="color: var(--ink-light);">
+          Salamanca itself is a beautiful medieval city in central Spain with a vibrant musical culture. The city's richness—its history, architecture, musical traditions, and intellectual energy—provides an ideal context for deep research and creative practice.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

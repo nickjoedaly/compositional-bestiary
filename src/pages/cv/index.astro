@@ -1,0 +1,208 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Professional CV"
+  description="Nicholas Daly's education, fellowships, and professional experience"
+  section="cv"
+>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-overline">Curriculum Vitae</div>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--ink); margin-bottom: 0.8rem;">
+        Nicholas <em style="color: var(--red); font-style: italic;">Daly</em>
+      </h1>
+      <div class="page-hero-sub">
+        Scholar, composer, and nonprofit strategist with 35 years of musical practice and $21M+ in grant funding secured.
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDEBAR LAYOUT -->
+  <section class="section">
+    <div class="container-wide" style="display: grid; grid-template-columns: 1fr 260px; gap: 3rem; align-items: start;">
+      <!-- MAIN CONTENT -->
+      <div>
+        <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">Professional Summary</h2>
+
+        <p style="color: var(--ink-light); margin-bottom: 1.2rem;">
+          I am a scholar, composer, and nonprofit strategist dedicated to the intersection of pedagogy, creativity, and technology. My work bridges academic research, artistic practice, and practical social impact—currently pursuing a doctoral degree in composition pedagogy while simultaneously running a consulting practice that has secured over $21 million in grant funding for nonprofit organizations.
+        </p>
+
+        <p style="color: var(--ink-light); margin-bottom: 1.2rem;">
+          My doctoral research explores how algorithmic composition can serve as a pedagogical tool for awakening artistic agency. Rather than treating technology as a replacement for human creativity, I investigate how algorithms can function as "convivial tools"—in the sense of Ivan Illich—that augment and honor human intention.
+        </p>
+
+        <p style="color: var(--ink-light); margin-bottom: 1.2rem;">
+          I bring a distinctive interdisciplinary perspective informed by 35 years of musical practice across flamenco, fado, Celtic traditions, West African drumming, bluegrass, and jazz. This deep immersion in multiple musical traditions shapes my understanding of pedagogy, creativity, and the transmission of knowledge across cultures.
+        </p>
+
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">Education</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2024–</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">PhD in Composition</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>Universidad de Salamanca, Spain</strong><br>
+                  Doctoral research on "Algorithmic Composition as Pedagogy: The Compositional Bestiary and the Technics of Inner Revelation." Supervisor: Bohdan Syroyid.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2020–2022</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">MLitt in Composition (Erasmus Mundus)</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>University of St Andrews (Scotland), Universidad de Santiago de Compostela (Spain), Universidade NOVA de Lisboa (Portugal)</strong><br>
+                  Two-year joint degree program with exchange across three European institutions. Thesis on ecocritical approaches to contemporary composition.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2009–2013</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">BA in Music</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>Temple University, Philadelphia, USA</strong><br>
+                  Studied music theory, composition, and ethnomusicology with focus on pedagogical approaches to non-Western music traditions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">Fellowships & Awards</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2020–2022</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">Erasmus Mundus Scholarship</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  Full scholarship for joint degree program across three European universities. Highly competitive, awarded to ~60 students globally per year.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2013–2014</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">Fulbright English Teaching Assistant</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>Spain</strong><br>
+                  Taught English language and American culture while pursuing musical study in flamenco and Spanish pedagogy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">Professional Experience</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2022–Present</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">Founder & Principal Consultant</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>Daly Grant Strategy LLC</strong><br>
+                  Provide grant research, strategy development, and writing services to nonprofit organizations. Clients have successfully secured $21M+ in grant funding across multiple sectors (education, environmental conservation, social justice, international development).
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2020–2022</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">Grant Consultant & Program Manager</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>International Network of Engaged Communities (INET)</strong><br>
+                  Designed grant strategies, wrote competitive proposals, and managed multi-year funded programs for international development initiatives.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2018–2020</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">Music Director</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>MIMA Music (Madrid, Spain)</strong><br>
+                  Directed collaborative music projects, organized performances, and developed innovative music education curriculum for underserved communities.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2014–2017</div>
+              <div class="timeline-content">
+                <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--red);">Program Officer & Conservation Corps Member</h3>
+                <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+                  <strong>Montana Conservation Corps</strong><br>
+                  Managed landscape conservation projects, led team training, and developed community engagement programs for environmental sustainability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">Doctoral Research</h3>
+
+          <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 0;">
+            Currently pursuing a PhD at Universidad de Salamanca under the supervision of Bohdan Syroyid. Research focuses on developing a pedagogical framework that uses algorithmic composition and imaginal cartography to cultivate artistic agency and creativity in students. The dissertation will culminate in "The Compositional Bestiary," a multimedia work combining theoretical research with creative practice.
+          </p>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 600; margin-top: 0; margin-bottom: 0.8rem; color: var(--ink-light);">Musical Practice</h3>
+
+          <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">
+            Musician with 35+ years of continuous practice across multiple traditions: flamenco (15 years, primarily in Spain), fado (12 years, Portugal), Celtic music and Irish traditional (8 years), West African drumming (6 years, Mali and Senegal), bluegrass (7 years), and jazz (ongoing). This deep cross-cultural immersion informs my approach to pedagogy and composition, emphasizing the importance of embodied learning and apprenticeship.
+          </p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" style="border: 1px solid var(--border); padding: 1.5rem; font-size: 0.88rem; position: sticky; top: 72px;">
+        <dl style="margin: 0;">
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 0;">Education Level</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">PhD Candidate</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Field</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">Music / Composition Pedagogy</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Languages</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">English (native), Spanish (fluent), Portuguese (fluent), French (intermediate), Galician (conversational)</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Based</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">Salamanca, Spain</dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Contact</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">
+            <a href="mailto:nicholas@daly.bio" style="color: var(--gold); text-decoration: none;">nicholas@daly.bio</a>
+          </dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">GitHub</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">
+            <a href="https://github.com/nickjoedaly" style="color: var(--gold); text-decoration: none;" target="_blank">@nickjoedaly</a>
+          </dd>
+
+          <dt style="font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 1rem;">Musical Instruments</dt>
+          <dd style="color: var(--ink-light); margin-top: 0.15rem; font-size: 0.88rem;">Guitar, piano, percussion, voice</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

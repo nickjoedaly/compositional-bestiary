@@ -1,83 +1,125 @@
 ---
+import "../styles/global.css";
+
 interface Props {
   title: string;
   description?: string;
-  section?: 'home' | 'project' | 'research' | 'works' | 'tools' | 'book' | 'about';
+  section?: string;
   ogImage?: string;
 }
 
-const { title, description = 'The Compositional Bestiary — Nicholas Daly\'s practice-based PhD research at the Universidad de Salamanca.', section = 'home', ogImage } = Astro.props;
-const siteTitle = title === 'Home' ? 'The Compositional Bestiary' : `${title} | The Compositional Bestiary`;
+const { title, description, section = "home", ogImage } = Astro.props;
 const base = import.meta.env.BASE_URL;
-import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-section={section}>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{siteTitle}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={siteTitle}>
-  <meta property="og:description" content={description}>
-  <meta property="og:type" content="website">
-  <meta property="og:url" content={Astro.url}>
+  <title>{title} — Nicholas Daly</title>
+  <meta name="description" content={description || "Nicholas Daly — Composer, Scholar, Nonprofit Strategist"}>
   {ogImage && <meta property="og:image" content={ogImage}>}
-  <meta name="twitter:card" content="summary">
-  <link rel="sitemap" href={`${base}sitemap-index.xml`}>
-  <link rel="canonical" href={Astro.url}>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐉</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🐉</text></svg>">
 </head>
+
 <body>
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href={`${base}`} class="nav-brand">The Compositional Bestiary</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <a href={`${base}`} class="nav-brand">Nicholas Daly</a>
+
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <ul class="nav-links" role="navigation">
+
+      <ul class="nav-links" id="navLinks">
         <li><a href={`${base}`} class:list={[{ active: section === 'home' }]}>Home</a></li>
-        <li><a href={`${base}project/`} class:list={[{ active: section === 'project' }]}>Project</a></li>
-        <li><a href={`${base}research/`} class:list={[{ active: section === 'research' }]}>Research</a></li>
-        <li><a href={`${base}works/`} class:list={[{ active: section === 'works' }]}>Works</a></li>
-        <li><a href={`${base}tools/`} class:list={[{ active: section === 'tools' }]}>Tools</a></li>
-        <li><a href={`${base}book/`} class:list={[{ active: section === 'book' }]}>Book</a></li>
+
+        <li class="nav-dropdown">
+          <a href={`${base}research/`}>Research</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href={`${base}research/`}>Thesis Overview</a></li>
+            <li><a href={`${base}research/framework/`}>Theoretical Framework</a></li>
+            <li><a href={`${base}research/bibliography/`}>Bibliography</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-dropdown">
+          <a href={`${base}portfolio/`}>Portfolio</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href={`${base}portfolio/`}>Compositions</a></li>
+            <li><a href={`${base}bestiary/`}>The Bestiary</a></li>
+            <li><a href={`${base}tools/`}>MuseScore Plugins</a></li>
+          </ul>
+        </li>
+
+        <li><a href={`${base}cv/`} class:list={[{ active: section === 'cv' }]}>CV</a></li>
+        <li><a href={`${base}updates/`} class:list={[{ active: section === 'updates' }]}>Updates</a></li>
         <li><a href={`${base}about/`} class:list={[{ active: section === 'about' }]}>About</a></li>
       </ul>
     </div>
   </nav>
 
-  <main>
+  <main style="margin-top: 56px;">
     <slot />
   </main>
 
-  <footer class="site-footer">
-    <p>The Compositional Bestiary &copy; {new Date().getFullYear()} <a href={`${base}about/`}>Nicholas Daly</a></p>
-    <p style="margin-top: 0.35rem;">
-      <a href="mailto:nick@nickdalycreative.com">nick@nickdalycreative.com</a> &middot;
-      <a href="https://github.com/nickjoedaly" target="_blank" rel="noopener">GitHub</a>
+  <footer style="border-top: 1px solid var(--border); padding: 3rem 2rem; text-align: center; color: var(--ink-faded); font-size: 0.9rem;">
+    <p style="margin: 0;">© 2026 Nicholas Daly. All rights reserved.</p>
+    <p style="margin: 0.5rem 0 0;">
+      <a href="mailto:nicholas@daly.bio">nicholas@daly.bio</a> ·
+      <a href="https://github.com/nickjoedaly" target="_blank">GitHub</a>
     </p>
   </footer>
 
   <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (toggle && navLinks) {
-      toggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('open');
-        toggle.classList.toggle('active');
-        toggle.setAttribute('aria-expanded', String(isOpen));
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    toggle?.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navLinks?.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle?.classList.remove('active');
+        navLinks?.classList.remove('active');
       });
-      navLinks.querySelectorAll('a').forEach(a =>
-        a.addEventListener('click', () => {
-          navLinks.classList.remove('open');
-          toggle.classList.remove('active');
-          toggle.setAttribute('aria-expanded', 'false');
-        })
-      );
-    }
+    });
   </script>
 
+  <style>
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--parchment);
+        border-bottom: 1px solid var(--border);
+        padding: 0.5rem 0;
+      }
+      .nav-links.active { display: flex; }
+      .nav-links a { padding: 0.5rem 1rem; display: block; }
+      .nav-dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: var(--parchment-dark);
+        border: none;
+        box-shadow: none;
+        min-width: auto;
+        padding-left: 1rem;
+      }
+    }
+  </style>
 </body>
 </html>

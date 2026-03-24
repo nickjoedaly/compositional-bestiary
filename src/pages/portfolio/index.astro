@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Compositions"
+  description="Nicholas Daly's compositional portfolio across ensemble types and media"
+  section="portfolio"
+>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-overline">Creative Practice</div>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--ink); margin-bottom: 0.8rem;">
+        Compositional <em style="color: var(--red); font-style: italic;">Portfolio</em>
+      </h1>
+      <div class="page-hero-sub">
+        A selection of works across ensemble types, from chamber works to orchestral pieces, exploring compositional approaches grounded in both tradition and algorithmic collaboration.
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPOSITIONS -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; margin: 2rem 0;">
+        <!-- Seawater, Yearning -->
+        <div style="border: 1px solid var(--border); padding: 2rem; position: relative;">
+          <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 600; margin: 0 0 0.3rem; color: var(--red);">Seawater, Yearning</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--ink-faded);">Large Ensemble · 2025 · ~15 minutes</p>
+          </div>
+
+          <div class="audio-player" style="display: flex; align-items: center; gap: 1rem; border: 1px solid var(--border); padding: 1rem 1.5rem; margin: 1rem 0;">
+            <button class="play-btn" style="width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); cursor: pointer; flex-shrink: 0; background: transparent; transition: all var(--transition);">▶</button>
+            <div class="audio-info" style="flex: 1;">
+              <div class="audio-title" style="font-weight: 600; font-size: 0.95rem;">Listen to excerpt</div>
+              <div class="audio-meta" style="font-size: 0.8rem; color: var(--ink-faded);">3:22 recording</div>
+            </div>
+          </div>
+
+          <p style="color: var(--ink-light); margin: 1rem 0;">
+            A meditation on desire, loss, and the eternal movement of water. This work for mixed ensemble explores the tension between restless motion and static harmony. Each instrument group represents a different quality of yearning: the strings pulse with longing, the winds breathe with resignation, the percussion marks time's passage.
+          </p>
+
+          <p style="color: var(--ink-light); margin: 0;">
+            The formal arc moves from undifferentiated texture toward crystalline moments of clarity, each followed by submersion back into the flowing continuum. The work engages with spectral techniques and the Bestiary's Harmonic Alchemist, using harmonic constraint as a generative principle.
+          </p>
+        </div>
+
+        <!-- Seawater, Personhood -->
+        <div style="border: 1px solid var(--border); padding: 2rem; position: relative;">
+          <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 600; margin: 0 0 0.3rem; color: var(--red);">Seawater, Personhood</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--ink-faded);">Chamber Ensemble · 2025 · ~12 minutes</p>
+          </div>
+
+          <div class="audio-player" style="display: flex; align-items: center; gap: 1rem; border: 1px solid var(--border); padding: 1rem 1.5rem; margin: 1rem 0;">
+            <button class="play-btn" style="width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); cursor: pointer; flex-shrink: 0; background: transparent; transition: all var(--transition);">▶</button>
+            <div class="audio-info" style="flex: 1;">
+              <div class="audio-title" style="font-weight: 600; font-size: 0.95rem;">Listen to excerpt</div>
+              <div class="audio-meta" style="font-size: 0.8rem; color: var(--ink-faded);">2:45 recording</div>
+            </div>
+          </div>
+
+          <p style="color: var(--ink-light); margin: 1rem 0;">
+            A more intimate companion piece to "Yearning," this work for flute, clarinet, violin, cello, and piano asks: what does it mean to become oneself within an ecology of other voices? The piece employs call-and-response patterns drawn from flamenco and West African music, reimagined through contemporary harmony.
+          </p>
+
+          <p style="color: var(--ink-light); margin: 0;">
+            Rather than subordinating voices to an overarching form, the work treats each instrument as an irreducible subject—each with its own melodic integrity and right to emerge. Influenced by the Bestiary's commitment to "Personhood as Sacred," the composition demonstrates how individual voices can maintain distinctness while creating coherent ensemble dialogue.
+          </p>
+        </div>
+
+        <!-- Crickets -->
+        <div style="border: 1px solid var(--border); padding: 2rem; position: relative;">
+          <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 600; margin: 0 0 0.3rem; color: var(--red);">Crickets</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--ink-faded);">Mixed Media · 2025 · variable duration</p>
+          </div>
+
+          <div class="audio-player" style="display: flex; align-items: center; gap: 1rem; border: 1px solid var(--border); padding: 1rem 1.5rem; margin: 1rem 0;">
+            <button class="play-btn" style="width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); cursor: pointer; flex-shrink: 0; background: transparent; transition: all var(--transition);">▶</button>
+            <div class="audio-info" style="flex: 1;">
+              <div class="audio-title" style="font-weight: 600; font-size: 0.95rem;">Listen to excerpt</div>
+              <div class="audio-meta" style="font-size: 0.8rem; color: var(--ink-faded);">4:12 recording</div>
+            </div>
+          </div>
+
+          <p style="color: var(--ink-light); margin: 1rem 0;">
+            An experimental mixed-media work combining live instruments with processed field recordings of actual crickets. This piece directly engages David Abram's ecophenomenology and R. Murray Schafer's soundscape ecology by treating the voices of non-human creatures as legitimate musical participants.
+          </p>
+
+          <p style="color: var(--ink-light); margin: 0;">
+            The work uses algorithmic processes to map cricket chirp patterns onto instrumental lines, creating a strange hybridization where the boundary between "nature" and "culture" dissolves. Duration is variable—the piece can be extended or contracted depending on the performance context and performer choice, honoring the convivial principle that tools should be adaptable to human intention.
+          </p>
+        </div>
+
+        <!-- Āwalim al-Mithāl -->
+        <div style="border: 1px solid var(--border); padding: 2rem; position: relative;">
+          <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 600; margin: 0 0 0.3rem; color: var(--red);">'Āwalim al-Mithāl</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--ink-faded);">Orchestra · 2026 (planned) · ~20 minutes</p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin: 1rem 0;">
+            <span class="status status-planned" style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; font-weight: 500; background: var(--gold-glow); color: var(--gold);">In Planning</span>
+          </div>
+
+          <p style="color: var(--ink-light); margin: 1rem 0;">
+            The title refers to Corbin's "Worlds of the Image" (Āwalim al-Mithāl), the imaginal realm that mediates between material and divine knowledge. This orchestral work will be my largest-scale composition to date, exploring how the symphonic ensemble can collectively gesture toward invisible worlds.
+          </p>
+
+          <p style="color: var(--ink-light); margin: 0;">
+            The work is still in the planning stages but will synthesize many of the threads explored in earlier pieces: constraint-based harmony, ecological listening, cross-cultural musical dialogue, and the integration of algorithmic processes with human intention. It will serve as the artistic culmination of the doctoral research.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- COMPOSITIONAL APPROACH -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--ink);">Compositional Approach</h2>
+
+      <div class="prose" style="max-width: var(--max-width);">
+        <p class="drop-cap">
+          My compositional work is fundamentally interdisciplinary, drawing on three main sources: harmonic and formal innovation rooted in contemporary classical music, pedagogical and phenomenological insights from studying music in non-Western traditions (flamenco, fado, Celtic music, West African drumming), and algorithmic processes that invite unpredictability and constraint-based invention.
+        </p>
+
+        <p>
+          I work with what I call "convivial algorithms"—computational tools that I can converse with rather than simply execute. These tools generate possibilities; I retain artistic judgment about what to keep, discard, or transform. The algorithm is neither master nor slave, but collaborator. This models the pedagogical stance I advocate in the Bestiary: technology as companion rather than oracle or servant.
+        </p>
+
+        <p>
+          Formally, I am interested in open forms and processes that unfold according to internal logic rather than predetermined blueprints. Each piece has constraints—specific pitch sets, rhythmic cells, orchestrations—but within those constraints, both I and the algorithmic processes have freedom to explore. This mirrors the way constraint-based improvisation works in flamenco, where rigid formal structures (palos) paradoxically enable maximum creative freedom.
+        </p>
+
+        <p>
+          Harmonically, I work with extended just intonation and spectral techniques, allowing me to explore consonance and dissonance along a continuum rather than as binary categories. This approach honors both the microtonal experimentation of Harry Partch and Ben Johnston, and the harmonic subtlety of natural acoustic phenomena.
+        </p>
+
+        <p>
+          Finally, all my work is animated by what might be called an "ecological ethics"—an awareness that every sound carries cultural, environmental, and spiritual resonances. No gesture is purely formal; every harmonic choice has implications for how we listen to the world and position ourselves within it.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
